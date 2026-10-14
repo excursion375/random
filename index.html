@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>두근두근 랜덤 발표자 뽑기 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 헤더 영역 -->
+    <header>
+      <h1>🎉 두근두근 발표자 뽑기</h1>
+      <p>오늘의 주인공은 누구일까요?</p>
+    </header>
+
+    <!-- 발표자 표시 영역 -->
+    <section class="result-section">
+      <div id="resultBox" class="result-box">
+        <span id="resultText">누가 뽑힐까요? 🤔</span>
+      </div>
+      <button id="pickBtn" class="btn btn-pick">🎯 발표자 뽑기!</button>
+    </section>
+
+    <!-- 이름 입력 영역 -->
+    <section class="input-section">
+      <div class="input-group">
+        <input type="text" id="nameInput" placeholder="학생 이름을 입력하세요" autocomplete="off">
+        <button id="addBtn" class="btn btn-add">추가</button>
+      </div>
+    </section>
+
+    <!-- 명단 관리 영역 -->
+    <section class="list-section">
+      <div class="list-header">
+        <h2>참여 학생 (<span id="studentCount">0</span>명)</h2>
+        <button id="resetBtn" class="btn btn-reset">전체 초기화</button>
+      </div>
+      <div id="studentList" class="student-list">
+        <!-- 등록된 학생 이름 카드가 여기에 추가됩니다 -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
